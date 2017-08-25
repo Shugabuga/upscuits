@@ -1,24 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
+    <meta name="Description" content="HeyItsShuga - Developer and Designer">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:title" content="HeyItsShuga - Developer and Designer">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <link rel="stylesheet" href="https://shuga.co/font-awesome/css/font-awesome.min.css">
+    <link href="https://shuga.co/bootstrap.min.css" rel="stylesheet">
+    <link href="https://shuga.co/jumbotron.css" rel="stylesheet">
+    <link href="https://shuga.co/dist/css/swiper.min.css" rel="stylesheet">
+    <link rel="icon" href="https://shuga.co/favicon.png">
+    <link rel="mask-icon" color="black" href="https://shuga.co/favicon.svg">
+    <meta name="theme-color" content="#000000">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@HeyItsShuga">
+    <meta name="twitter:creator" content="@HeyItsShuga">
+    <meta name="twitter:title" content="HeyItsShuga">
+    <meta name="twitter:description" content="Developer and Designer">
+    <meta name="twitter:image" content="https://shuga.co/logo.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="HeyItsShuga">
+    <link rel="apple-touch-icon-precomposed" href="https://shuga.co/icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="https://shuga.co/icon.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="shortcut icon" href="https://shuga.co/logo_transparent.png">
+      <link href="css/upscuits.css" rel="stylesheet">
+    <title>shugaStatus</title>
+  </head>
 
-	<title data-i18n="head.title">Upscuits | Uptime Biscuits</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link href="yeti.css" ref="stylesheet">
-	<link href="css/upscuits.css" rel="stylesheet">
-</head>
+  <body>
+    <center class="modal" id="pgp">
+      <h1 onclick="hide('pgp')">PGP Public Key</h1>
+      <h4>252E 1A85 7E53 DDAA 4A7C  B614 7E2F B28A 0B92 585E</h4>
+      <textarea>
+        -----BEGIN PGP PUBLIC KEY BLOCK-----
 
-<body>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>shugaStatus</h1>
+        mQINBFj0CzoBEACq7vlI0nP7Eayzegth8g7TuuAim5jA5k2JWfFUI7yP2pIDC6Vm
+        YdmxCZKiBPJrzg49m1vInbsXJQ/namEik5gFYn/gjyckqPTJdIplPn1rC9+qQdxz
+        QqdNECLqxqydRLEr0lZ/Nj3hvn9hfUS0jxs9/zUL/MnfVsObwJDjuXlBj84ouchM
+        M0zSDfVkrt6pgkpH7Y/iierUcJkht4/bfkRbUmLAMo2lUTWB2de8z2OAnWIYH5Uc
+        /wadOMh2xGC5WqmtVRniKCmzO2zeZ1TzNubUeHysTuE2LenIHkRV7RIckLPQi79E
+        /rboGCJJ+iwTi9D6rYrpK9OmUw7Q3exbHytFuMcHkYcPRzaIainEatCpC9sfSrmL
+        97V6Eg75ZSRvMj5f1z6nIl0PrSUvZT3JGtO2lNXXZ3ljOeU7fTZ4guGyVlpU00xX
+        q5WCUpx65ZjyG6IuaOwNHJG6u65PvrRqYcY9G/xPSIeJXLIyDSeoP8yP0tFxddRh
+        qjivZuEZoNJYhlPrx/bbzonhWSCFXQGVpAqmA5qwP0oVV4YckBdlxMsL9iQXTtLd
+        guYZHGgDn3ykBwI6MdyNaCD5ENNVeb+R8RBG7Oy6DST/OkKz5uPu2zIqDb5DxRPo
+        1iDa5B+4KuF+Wfi8wrz6smN59IwIacEYLJmf7f5KIlLtCSn0kEgfLyzgNwARAQAB
+        tJlIZXlJdHNTaHVnYSAoSWYgeW91IG5lZWQgdG8gY29udGFjdCBtZSwgZWl0aGVy
+        IHVzZSBteSBUd2l0dGVyIGhhbmRsZSBASGV5SXRzU2h1Z2EsIG15IFJlZGRpdCBo
+        YW5kbGUgL3UvSGV5SXRzU2h1Z2EsIG9yIG15IGVtYWlsLikgPGhleWl0c3NodWdh
+        QGdtYWlsLmNvbT6JAjkEEwEIACMFAlj0CzoCGwMHCwkIBwMCAQYVCAIJCgsEFgID
+        AQIeAQIXgAAKCRDyfOb4l7j1VdwcD/9YKt7+qttyVY/b839sPocXcFdJNPpdy7Uw
+        jBiof169zlqxuKW3cTSD/iHpIkF46oeklsZqOgcclOQlnDfVN6bgU1B6ZOV0lJNV
+        iTZPEJNoMo3WpxsB32A1HWqf2CyWSOSoo3bSaJhRf5Lg5rRDMvGq6RcUQxG9V7Im
+        YvYoqctnOBxwjWYMlFAxjnzPyFCriPUy6948aK2dCFtu+Yy/3cKkFLSaA7378Uri
+        hqtfWUWsXvfZXa7sXvfN3JJT2pVSuqqvT97J85GQuzjniHVfuxXGWhsQ1jJ2rRoQ
+        3Zae0qy3jCCZc0ncvUZPaYrlMT1LTdyMBwyVpA0RtAkfFWRAG5AB0RAjpbVOhJ/l
+        w6D+r+ji0HDVZHSv16yRhx5BIMk+ae1OvDBKgm7zYaeEa3Patap6Wij+/8zJZCHu
+        0YcQQ2DIzTacxuPSBbw1jC/S9XaoDI+vVdWov/J5ZrVjxvjYrCZD9v5BAkK3M1PM
+        osXmyzFkWcKkuZlrrDVukwi2G2lx47L1tobCU9kLVs5W8KxxfNrBaQey2sqWhPpq
+        NuzJL1nddwQDYVQQ9yphnNO1DN+Eq6rLS1pDAuwhVFZldm0p7OR/AoMBrQsXZwfQ
+        JU9sA2GPIRNbpMUnwkj1N4vWCT8JAzRMgeQdbcMSDXdvPDwMti+mha7NbjsJaEeW
+        EX52wVGSQ9H/AAAj9f8AACPwARAAAQEAAAAAAAAAAAAAAAD/2P/gABBKRklGAAEB
+        AABIAEgAAP/hAIxFeGlmAABNTQAqAAAACAAFARIAAwAAAAEAAQAAARoABQAAAAEA
+        AABKARsABQAAAAEAAABSASgAAwAAAAEAAgAAh2kABAAAAAEAAABaAAAAAAAAAEgA
+        AAABAAAASAAAAAEAA6ABAAMAAAABAAEAAKACAAQAAAABAAABAKADAAQAAAABAAAB
+        AAAAAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDU
+        HYzZjwCyBOmACZjs+EJ+/8AAEQgBAAEAAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEB
+        AAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUS
+        ITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5
+        OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeY
+        mZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq
+        8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALUR
+        AAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1Lw
+        FWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdo
+        aWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLD
+        xMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/bAEMABQMEBAQDBQQE
+        BAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIk
+        Ih4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4e
+        Hh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/dAAQAEP/aAAwDAQACEQMRAD8A
+        +NKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+        oAKKKKACiiigAooooAKKKKAP/9D40ooooAKKKKACiiigAooooAKKKKACiiigAooo
+        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//0fjSiiigAooo
+        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+        oAKKKKACiiigD//S+NKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9P40ooooAKKKUqwGSpA+lAC
+        UUoBJwAT9KArE4CnI7YoASinbH/uN+VGx/7jflQA2iilKsBkqQPXFACUUU7Y/wDc
+        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
+        vGSfzryeigD1XWP2hfi/q1k9rd+OtXCSDDeR5VuSPrEisPwIrzPUL671C6kuryeS
+        eaVt0kkjl2c+rMSSx9yTVaigAooooA1PD/iDWvD98L7RdTvNPulGBNazvE4HHG5S
+        CRwODke1em2H7S3xmskVIfG15IqjGLm2t5s/iY8/rXj1FAHrGs/tE/GHVrSW2uvH
+        OqRrICD9lWK3wPYxoGH/AH1Xmep6nfalezXl9dTXFzMcyyyyM7vwB8zMSx6Dqap0
+        UAd3afGD4m2lpDaWvjvxFDBCixxxx3zKqKBgAAdAB2rnvFvirxF4svYrzxHreoat
+        cRR+Ukl3OZGVM52jPQZ5rFooAKKKKAOu8NfErx54b0waZoXi/XNOsg7SCC2vWRAz
+        csQO2TyfejxL8SvHfiTS20vXfFutalZM6uYLq7MiblOQcHuDXI0UAFFFFAH/0vjS
+        iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+        iiigAooooAKKKKACiiigD//T+NKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+        iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9T40ooooAKKKKAC
+        iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+        iiigAooooA//1fjSiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+        iiigAooooAKKKKACiiigAooooAKKKKACiiigD//W+NKKKKACiiigAooooAKKKKAC
+        iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP
+        /9mJAjkEEwEIACMFAlj0DCwCGwMHCwkIBwMCAQYVCAIJCgsEFgIDAQIeAQIXgAAK
+        CRDyfOb4l7j1VdhlD/9t1SGB4xQ7uwIe1nn8VeBsa74k/v9vCkx/wUXWL/TOoC+R
+        jA4v8/iHegELNGykl4aOq1djUpYWA9dZsK5ay3Yi6mowggBpYOts2n8FZX4ur3q/
+        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
+        +4qfXz0bys88VR3SzIYUcA==
+        =8qQl
+        -----END PGP PUBLIC KEY BLOCK-----
+      </textarea><br><br>
+      <a onclick="hide('pgp')" class="btn btn-white">Hide</a>
+    </center>
 
-			<p data-i18n="head.hero">
-				Status of services provided by jCO and affiliates.
-			</p>
-		</div>
+    <center class="modal" id="commishQuiz">
+      <h1 onclick="hide('commishQuiz')">Pricing Calculator</h1>
+      <div style="display:none" id="commish-1">
+        <h3>Is this for something you profit off of (like a company)?</h3>
+        <txt style="color:lightgray">We consider any operation yielding more than $50/month in gross income or a for-profit organization with paid employees commercial.<txt><br><br><br>
+        <a onclick="hide('commish-1');show('commish-2')" class="btn btn-white">Yes</a><i style="visibility:hidden">---</i><a onclick="hide('commish-1');show('commish-3')" class="btn btn-white">No</a><br>
+      </div>
+      <div style="display:none" id="commish-2">
+        <h3>Because the project is commercial you need to spend at least:</h3>
+        <t>$50</t>
+        <h3>This allows for more license flexibility.</h3>
+      </div>
+      <div style="display:none" id="commish-3">
+        <h3>What are you interested in?</h3>
+        <a onclick="hide('commish-3');show('commish-4')" class="btn btn-white">Profile Picture</a><br><br>
+        <a onclick="hide('commish-3');show('commish-4')" class="btn btn-white">Account Banners</a><br><br>
+        <a onclick="hide('commish-3');show('commish-5')" class="btn btn-white">Profile Pictures and Account Banners</a><br><br>
+        <a onclick="hide('commish-3');show('commish-6')" class="btn btn-white">A Basic Website</a><br><br>
+        <a onclick="hide('commish-3');show('commish-7')" class="btn btn-white">An Intermediate Website</a><br><br>
+      </div>
+      <div style="display:none" id="commish-4">
+        <h3>Both profile pictures and banners (seperately) cost</h3>
+        <t>$5</t>
+        <h3>If you want to buy both at once, it is $7.</h3>
+      </div>
+      <div style="display:none" id="commish-5">
+        <h3>Both profile pictures and banners (bundled) cost</h3>
+        <t>$7</t>
+        <h3>If you want to buy them seperately, they are $5 each.</h3>
+      </div>
+      <div style="display:none" id="commish-6">
+        <h3>A basic website like <a style="color:#aaaaaa;text-decoration:none" href="demo/1.html">this one</a> would cost</h3>
+        <t>$2</t>
+        <h3>More complicated websites are at least $15. Both come with Twitter/Facebook/iMessage/Discord card support.</h3>
+      </div>
+      <div style="display:none" id="commish-7">
+        <h3>A more complicated website like the one you are on (shuga.co) would cost</h3>
+        <t>$15 (or more)</t>
+        <h3>A more basic site would be $2. Both come with Twitter/Facebook/iMessage/Discord card support.</h3>
+      </div>
+      <br><br>
+      <a onclick="hide('commishQuiz');show('commish-1');hide('commish-2');hide('commish-3');hide('commish-4');hide('commish-5');hide('commish-6');hide('commish-7');" class="btn btn-white">Exit</a>
+    </center>
+
+
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button style="border: 0px" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <svg class="logo" width="150px" height="66.168px" viewBox="0 0 556 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Artboard" transform="translate(-1007.000000, -600.000000)">
+                      <g id="Group" transform="translate(1006.000000, 600.000000)">
+                          <path d="M65.1124994,171.4 C65.1124994,167.783315 63.5958479,164.92501 60.5624994,162.825 C57.5291509,160.724989 53.7666885,158.800009 49.2749994,157.05 C44.7833103,155.299991 39.9125257,153.550009 34.6624994,151.8 C29.4124732,150.049991 24.5416885,147.716681 20.0499994,144.8 C15.5583103,141.883319 11.7958479,138.208355 8.7624994,133.775 C5.7291509,129.341644 4.2124994,123.566702 4.2124994,116.45 C4.2124994,110.383303 5.29165528,105.045856 7.4499994,100.4375 C9.60834353,95.8291436 12.6416465,92.0375149 16.5499994,89.0625 C20.4583523,86.0874851 25.183305,83.8416742 30.7249994,82.325 C36.2666938,80.8083257 42.3624662,80.05 49.0124994,80.05 C56.7125379,80.05 64.033298,80.7208266 70.9749994,82.0625 C77.9167008,83.4041734 83.6041439,85.2999877 88.0374994,87.75 L79.8124994,109.45 C78.4124924,108.633329 76.6333435,107.787504 74.4749994,106.9125 C72.3166553,106.037496 69.8375134,105.27917 67.0374994,104.6375 C64.2374854,103.99583 61.2625152,103.470835 58.1124994,103.0625 C54.9624837,102.654165 51.7541824,102.45 48.4874994,102.45 C42.6541369,102.45 38.1333488,103.470823 34.9249994,105.5125 C31.71665,107.554177 30.1124994,110.383315 30.1124994,114 C30.1124994,117.616685 31.6291509,120.504156 34.6624994,122.6625 C37.6958479,124.820844 41.4583103,126.804158 45.9499994,128.6125 C50.4416885,130.420842 55.3124732,132.229158 60.5624994,134.0375 C65.8125257,135.845842 70.6833103,138.179152 75.1749994,141.0375 C79.6666885,143.895848 83.4291509,147.483312 86.4624994,151.8 C89.4958479,156.116688 91.0124994,161.658299 91.0124994,168.425 C91.0124994,175.1917 89.8458444,181.024975 87.5124994,185.925 C85.1791544,190.825024 81.883354,194.879151 77.6249994,198.0875 C73.3666448,201.295849 68.2625292,203.658326 62.3124994,205.175 C56.3624697,206.691674 49.8292017,207.45 42.7124994,207.45 C37.9291422,207.45 33.408354,207.187503 29.1499994,206.6625 C24.8916448,206.137497 20.9541842,205.495837 17.3374994,204.7375 C13.7208147,203.979163 10.5416798,203.162504 7.7999994,202.2875 C5.05831903,201.412496 2.8708409,200.566671 1.2374994,199.75 L9.8124994,177.875 C11.0958392,178.575003 12.874988,179.333329 15.1499994,180.15 C17.4250108,180.966671 19.9624854,181.754163 22.7624994,182.5125 C25.5625134,183.270837 28.56665,183.883331 31.7749994,184.35 C34.9833488,184.816669 38.2208164,185.05 41.4874994,185.05 C49.1875379,185.05 55.0499793,183.941678 59.0749994,181.725 C63.1000195,179.508322 65.1124994,176.06669 65.1124994,171.4 Z M179.7375,154.425 L130.7375,154.425 L130.7375,205 L104.8375,205 L104.8375,82.5 L130.7375,82.5 L130.7375,131.675 L179.7375,131.675 L179.7375,82.5 L205.6375,82.5 L205.6375,205 L179.7375,205 L179.7375,154.425 Z M297.1625,82.5 L321.6625,82.5 L321.6625,161.075 C321.6625,169.008373 320.525011,175.891637 318.25,181.725 C315.974989,187.558362 312.766687,192.341648 308.625,196.075 C304.483313,199.808352 299.525029,202.579158 293.75,204.3875 C287.974971,206.195842 281.645868,207.1 274.7625,207.1 C258.312418,207.1 245.770876,203.512536 237.1375,196.3375 C228.504123,189.162464 224.1875,178.400072 224.1875,164.05 L224.1875,82.5 L250.0875,82.5 L250.0875,159.325 C250.0875,168.65838 252.129146,175.162482 256.2125,178.8375 C260.295854,182.512518 266.36246,184.35 274.4125,184.35 C282.112538,184.35 287.829148,182.395853 291.5625,178.4875 C295.295852,174.579147 297.1625,168.191711 297.1625,159.325 L297.1625,82.5 Z M386.7625,140.6 L436.8125,140.6 L436.8125,195.55 C434.129153,197.65001 431.183349,199.429159 427.975,200.8875 C424.766651,202.345841 421.383351,203.570828 417.825,204.5625 C414.266649,205.554172 410.620852,206.283331 406.8875,206.75 C403.154148,207.216669 399.479185,207.45 395.8625,207.45 C387.462458,207.45 379.616703,206.225012 372.325,203.775 C365.033297,201.324988 358.675027,197.504193 353.25,192.3125 C347.824973,187.120807 343.566682,180.50004 340.475,172.45 C337.383318,164.39996 335.8375,154.833389 335.8375,143.75 C335.8375,132.199942 337.704148,122.370874 341.4375,114.2625 C345.170852,106.154126 350.041637,99.5625254 356.05,94.4875 C362.058363,89.4124746 368.76663,85.7375114 376.175,83.4625 C383.58337,81.1874886 390.962463,80.05 398.3125,80.05 C405.895871,80.05 412.574971,80.6041611 418.35,81.7125 C424.125029,82.8208389 428.645817,83.8999947 431.9125,84.95 L426.4875,106.475 C423.337484,105.424995 419.779187,104.550003 415.8125,103.85 C411.845814,103.149996 406.88753,102.8 400.9375,102.8 C395.454139,102.8 390.437523,103.529159 385.8875,104.9875 C381.337477,106.445841 377.37085,108.808317 373.9875,112.075 C370.60415,115.341683 367.979176,119.599974 366.1125,124.85 C364.245824,130.100026 363.3125,136.458296 363.3125,143.925 C363.3125,151.158369 364.245824,157.341641 366.1125,162.475 C367.979176,167.608359 370.516651,171.837483 373.725,175.1625 C376.933349,178.487517 380.637479,180.908326 384.8375,182.425 C389.037521,183.941674 393.47081,184.7 398.1375,184.7 C401.287516,184.7 404.466651,184.350003 407.675,183.65 C410.883349,182.949996 413.595822,181.841674 415.8125,180.325 L415.8125,159.15 L386.7625,156.35 L386.7625,140.6 Z M518.1875,178.925 L476.8875,178.925 L466.9125,205 L441.0125,205 L488.9625,81.625 L508.0375,81.625 L556.1625,205 L528.6875,205 L518.1875,178.925 Z M484.0625,158.45 L512.0625,158.45 L502.6125,132.9 L498.4125,113.475 L497.5375,113.475 L493.3375,133.075 L484.0625,158.45 Z" id="SHUGA" fill="#FFFFFF"></path>
+                          <path d="M40.1999995,32.325 L19.1999995,32.325 L19.1999995,54 L8.09999946,54 L8.09999946,1.5 L19.1999995,1.5 L19.1999995,22.575 L40.1999995,22.575 L40.1999995,1.5 L51.2999995,1.5 L51.2999995,54 L40.1999995,54 L40.1999995,32.325 Z M59.5499996,1.5 L93.3749996,1.5 L93.3749996,11.25 L70.6499996,11.25 L70.6499996,22.65 L91.2749996,22.65 L91.2749996,32.4 L70.6499996,32.4 L70.6499996,44.25 L93.7499996,44.25 L93.7499996,54 L59.5499996,54 L59.5499996,1.5 Z M114.225,34.65 L95.4749997,1.5 L108.675,1.5 L119.175,20.775 L120.375,26.4 L120.75,26.4 L122.025,20.625 L132.15,1.5 L144.075,1.5 L125.325,34.575 L125.325,54 L114.225,54 L114.225,34.65 Z M136.275,48.975 C136.275,47.2749915 136.874994,45.9125051 138.075,44.8875 C139.275006,43.8624949 140.774991,43.35 142.575,43.35 C144.825011,43.35 146.599993,44.0749928 147.9,45.525 C149.200006,46.9750073 149.85,48.8249888 149.85,51.075 C149.85,53.4250118 149.475004,55.4249918 148.725,57.075 C147.974996,58.7250083 147.037505,60.0874946 145.9125,61.1625 C144.787494,62.2375054 143.600006,63.0874969 142.35,63.7125 C141.099994,64.3375031 139.950005,64.7999985 138.9,65.1 L135.9,60.75 C137.300007,60.2999978 138.512495,59.4625061 139.5375,58.2375 C140.562505,57.0124939 141.174999,55.700007 141.375,54.3 C140.174994,54.4500008 139.025005,54.0875044 137.925,53.2125 C136.824994,52.3374956 136.275,50.9250098 136.275,48.975 Z M175.05,7.5 L169.05,7.5 L169.05,1.5 L192.15,1.5 L192.15,7.5 L186.15,7.5 L186.15,48 L192.15,48 L192.15,54 L169.05,54 L169.05,48 L175.05,48 L175.05,7.5 Z M238.95,11.25 L222.3,11.25 L222.3,54 L211.2,54 L211.2,11.25 L194.55,11.25 L194.55,1.5 L238.95,1.5 L238.95,11.25 Z M241.5,5.85 C241.5,4.3499925 242.024995,3.13750463 243.075,2.2125 C244.125006,1.28749538 245.449992,0.825 247.05,0.825 C249.05001,0.825 250.624995,1.44999375 251.775,2.7 C252.925006,3.95000625 253.5,5.54999025 253.5,7.5 C253.5,9.6000105 253.162504,11.3624929 252.4875,12.7875 C251.812497,14.2125071 250.987505,15.3999953 250.0125,16.35 C249.037495,17.3000048 248.037505,18.0374974 247.0125,18.5625 C245.987495,19.0875026 245.100004,19.449999 244.35,19.65 L241.725,15.225 C242.825006,14.824998 243.774996,14.2625036 244.575,13.5375 C245.375004,12.8124964 245.825,11.8750058 245.925,10.725 C244.874995,10.8250005 243.875005,10.4500043 242.925,9.6 C241.974996,8.74999575 241.5,7.50000825 241.5,5.85 Z M284.625,39.6 C284.625,38.0499923 283.975007,36.8250045 282.675,35.925 C281.374994,35.0249955 279.76251,34.2000038 277.8375,33.45 C275.912491,32.6999963 273.825012,31.9500038 271.575,31.2 C269.324989,30.4499963 267.23751,29.4500063 265.3125,28.2 C263.387491,26.9499938 261.775007,25.3750095 260.475,23.475 C259.174994,21.5749905 258.525,19.1000153 258.525,16.05 C258.525,13.449987 258.987496,11.1625099 259.9125,9.1875 C260.837505,7.21249013 262.137492,5.58750638 263.8125,4.3125 C265.487509,3.03749363 267.512489,2.07500325 269.8875,1.425 C272.262512,0.77499675 274.874986,0.45 277.725,0.45 C281.025017,0.45 284.162486,0.737497125 287.1375,1.3125 C290.112515,1.88750288 292.549991,2.69999475 294.45,3.75 L290.925,13.05 C290.324997,12.6999983 289.562505,12.3375019 288.6375,11.9625 C287.712496,11.5874981 286.650006,11.2625014 285.45,10.9875 C284.249994,10.7124986 282.975007,10.4875009 281.625,10.3125 C280.274994,10.1374991 278.900007,10.05 277.5,10.05 C274.999988,10.05 273.062507,10.4874956 271.6875,11.3625 C270.312494,12.2375044 269.625,13.4499923 269.625,15 C269.625,16.5500078 270.274994,17.7874954 271.575,18.7125 C272.875007,19.6375046 274.487491,20.4874961 276.4125,21.2625 C278.33751,22.0375039 280.424989,22.8124961 282.675,23.5875 C284.925012,24.3625039 287.012491,25.3624939 288.9375,26.5875 C290.86251,27.8125061 292.474994,29.3499908 293.775,31.2 C295.075007,33.0500093 295.725,35.4249855 295.725,38.325 C295.725,41.2250145 295.225005,43.7249895 294.225,45.825 C293.224995,47.9250105 291.81251,49.6624931 289.9875,51.0375 C288.162491,52.4125069 285.975013,53.4249968 283.425,54.075 C280.874988,54.7250033 278.075016,55.05 275.025,55.05 C272.97499,55.05 271.03751,54.9375011 269.2125,54.7125 C267.387491,54.4874989 265.700008,54.2125016 264.15,53.8875 C262.599993,53.5624984 261.237506,53.2125019 260.0625,52.8375 C258.887495,52.4624981 257.950004,52.1000018 257.25,51.75 L260.925,42.375 C261.475003,42.6750015 262.237496,42.9999983 263.2125,43.35 C264.187505,43.7000018 265.274994,44.0374984 266.475,44.3625 C267.675006,44.6875016 268.962494,44.949999 270.3375,45.15 C271.712507,45.350001 273.099993,45.45 274.5,45.45 C277.800017,45.45 280.312492,44.9750048 282.0375,44.025 C283.762509,43.0749953 284.625,41.60001 284.625,39.6 Z" id="HEY,-IT’S" fill="#FFFFFF"></path>
+                          <g id="rgb2" transform="translate(322.000000, 1.000000)">
+                              <polygon id="R" fill="#FF0000" points="24.6849561 0 67.7195803 0 43.4452586 56.3801799 0 56.3801799"></polygon>
+                              <polygon id="G" fill="#00FF00" points="102.684956 0 145.71958 0 121.445259 56.3801799 78 56.3801799"></polygon>
+                              <polygon id="B" fill="#0000FF" points="179.684956 0 222.71958 0 198.445259 56.3801799 155 56.3801799"></polygon>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </svg>
+        </a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://shuga.co">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://shuga.co/discord/">ShugaBot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://shuga.co/qr/">QuickQR</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="https://status.shuga.co/">Uptime <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">shugaStatus</h1>
+        <p class="pJumbotron">Check the server status of jCO products and external partners</p>
+        <!-- <p><a class="btn btn-white btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+<!--            -->
+<div class="container">
 
 		<!-- progress bar of loaded servers -->
 		<div class="progress">
@@ -29,7 +417,31 @@
 
 		<!-- legenda of graphs -->
 		<div class="row">
-			<div class="col-md-8 col-md-offset-4">
+			<div class="col-md-6 offset-4">
+				<div class="well well-xs">
+					<div class="donut">
+						<div class="title" data-i18n="times.Last 24 hr">Today</div>
+					</div>
+					<div class="donut">
+						<div class="title" data-i18n="times.Last 7 days">This Week</div>
+					</div>
+					<div class="donut">
+						<div class="title" data-i18n="times.Last 30 days">This Month</div>
+					</div>
+					<div class="donut">
+						<div class="title" data-i18n="times.Last year">This Year</div>
+					</div>
+					<div class="donut">
+						<div class="title"  data-i18n="times.All time">All time</div>
+					</div>
+				</div>
+			</div><br><br>
+		</div>
+		<div id="server-container"></div>
+
+		<!-- legenda of graphs (again) -->
+		<div class="row">
+			<div class="col-md-8 offset-4">
 				<div class="well well-xs">
 					<div class="donut">
 						<div class="title" data-i18n="times.Last 24 hr">Today</div>
@@ -49,38 +461,12 @@
 				</div>
 			</div>
 		</div>
-		<div id="server-container"></div>
 
-		<!-- legenda of graphs (again) -->
-		<div class="row">
-			<div class="col-md-8 col-md-offset-4">
-				<div class="well well-xs">
-					<div class="donut">
-						<div class="title" data-i18n="times.Last 24 hr">Last 24 hr</div>
-					</div>
-					<div class="donut">
-						<div class="title" data-i18n="times.Last 7 days">Last 7 days</div>
-					</div>
-					<div class="donut">
-						<div class="title" data-i18n="times.Last 30 days">Last 30 days</div>
-					</div>
-					<div class="donut">
-						<div class="title" data-i18n="times.Last year">Last year</div>
-					</div>
-					<div class="donut">
-						<div class="title"  data-i18n="times.All time">All time</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- count down timer + progress bar -->
-		<div class="col-md-2">
-			<i class="icon-refresh"></i> <span id="last-update"></span>
-		</div>
+		<!-- count down timer + progress bar --><br>
 		<div class="progress">
 			<div class="progress-bar progress-bar-info countdown" role="progressbar" aria-valuemin="0" aria-valuemax="100">
 				<span class="sr-only"></span>
+                <i class="icon-refresh"></i> <span id="last-update"></span>
 			</div>
 		</div>
 
@@ -105,8 +491,43 @@
 			</div>
 		</div>
 	</div>
+<!--            -->
+        </div>
+      <hr>
 
-	<!-- mustache template for server row -->
+      <footer><br>
+        <p style="color:gray">Made with <txt style="color:pink">&#9829;</txt> by HeyItsShuga</p>
+        <p>
+          <a href="https://twitter.com/HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa fa-twitter" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://reddit.com/u/HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa fa-reddit-alien" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://github.com/Shugabuga" style="color:#a0a0a0;font-size:25px" class="fa fa-github" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://HeyItsShuga.deviantart.com" style="color:#a0a0a0;font-size:25px" class="fa fa-deviantart" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://soundcloud.com/HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa fa-soundcloud" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://blockchain.info/address/1LESHbmB7zEzpiUxsnDB7t8bKUDqHZxRwA" style="color:#a0a0a0;font-size:25px" class="fa fa-btc" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://paypal.me/HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa fa-paypal" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="mailto:heyitsshuga@gmail.com" style="color:#a0a0a0;font-size:25px" class="fa fa-envelope" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://medium.com/HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa fa-medium" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://news.ycombinator.com/user?id=HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa fa-hacker-news" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="http://youtube.com/HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa fa-youtube-play" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+          <a href="https://vid.me/HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa"><img style="width:25px;margin-bottom:5px" src="https://shuga.co/share/vidme.png"></a><i style="visibility:hidden">---</i>
+          <a href="https://gab.ai/shuga" style="color:#a0a0a0;font-size:25px" class="fa"><img style="width:25px;margin-bottom:5px" src="https://shuga.co/share/gab.png"></a><i style="visibility:hidden">---</i>
+          <a href="https://keybase.io/HeyItsShuga" style="color:#a0a0a0;font-size:25px" class="fa"><img style="width:25px;margin-bottom:5px" src="https://shuga.co/share/keybase.png"></a><i style="visibility:hidden">---</i>
+          <a onclick="show('pgp')" style="cursor:pointer;color:#a0a0a0;font-size:25px" class="fa fa-key" aria-hidden="true"></a><i style="visibility:hidden">---</i>
+        </p>
+      </footer>
+</div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://shuga.co/index.js"></script>
+<!-- mustache template for server row -->
 	<script type="template/mustache" id="server-template">
 		<div class="well {{alert}}">
 			<div class="row">
@@ -155,16 +576,11 @@
 		</div>
 
 	</script>
-
-
-	<script src="js/vendors.min.js" type="text/javascript"></script>
-	<script src="js/config.js" type="text/javascript"></script>
-	<script src="js/upscuits.js" type="text/javascript"></script>
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(myApp.dashboard.init);
-	</script>
-
-</body>
+  <script src="js/vendors.min.js" type="text/javascript"></script>
+  <script src="js/config.js" type="text/javascript"></script>
+  <script src="js/upscuits.js" type="text/javascript"></script>
+  <script type="text/javascript">
+     jQuery(document).ready(myApp.dashboard.init);
+  </script>
+  </body>
 </html>
