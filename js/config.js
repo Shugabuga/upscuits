@@ -7,6 +7,8 @@ var __apiKeys = [
     'm778874126-2199efa94e371583fd42a7e7', // fontPages
     'm779352438-ea9a9b3164e5aafb837d67e9', // iEMU
     'm779352445-0cfcb376793aa9bbd72416d8', // Alexa Skills
+    'm780210676-cf34547cd8284cd2a5c4bf4c', // IndigoHub: library (www)
+    'm780210670-f51a3a3d619706ed7e423a9f', // IndigoHub: app
     'm780045346-2d77165d0776d2d1c7f1c77d'  // EclipseEmu 
 ];
 
